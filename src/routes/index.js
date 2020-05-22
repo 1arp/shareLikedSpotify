@@ -37,7 +37,7 @@ route.get('/getTracks', async(req, res)=>{
       limit : 50,
       offset : i
     })
-    let uris =  [...tracks.body.items].map(a => a.track.uri)
+    let uris =  tracks.body.items.map(a => a.track.uri)
     await spotifyApi.addTracksToPlaylist(playlist.body.id,uris)
   }
   res.send('Playlist Created')
