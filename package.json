@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node server.js",
-    "test": "node server.js"
+    "test": "echo 'yolo' "
   },
   "dependencies": {
     "axios": "^0.19.2",
